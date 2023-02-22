@@ -2,16 +2,16 @@
 import {
   FaHtml5,
   FaCss3Alt,
-  FaBootstrap,
   FaReact,
   FaGitAlt,
   FaGithubSquare,
   FaLink,
 } from "react-icons/fa";
-import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
+import { SiChakraui, SiJavascript, SiStyledcomponents, SiFirebase } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
+import Ecommerce from "./images/ecommerce.png"
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -24,7 +24,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "TomasLopezPrimi";
 
 // Blog link icon (imported above)
 export const Blog = <FaLink />;
@@ -34,7 +34,7 @@ export const Blog = <FaLink />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "Desde el 2021 estudiando y haciendo proyectos de Web.. buscando trabajar como Desarrollador de React";
 
 /* Skills
  ************************************************************** 
@@ -58,8 +58,8 @@ export const skillData = [
   },
   {
     id: 4,
-    skill: <FaBootstrap className="display-4" />,
-    name: "BootStrap",
+    skill: <SiChakraui className="display-4" />,
+    name: "Chakra",
   },
   {
     id: 5,
@@ -73,8 +73,8 @@ export const skillData = [
   },
   {
     id: 7,
-    skill: <SiRedux className="display-4" />,
-    name: "Redux",
+    skill: <SiFirebase className="display-4" />,
+    name: "Firebase",
   },
   {
     id: 8,
@@ -95,14 +95,18 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["CoderHouse", "listado-peliculas", "proyecto-juego-dados"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 13-14)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
-  },
+    name: "CoderHouse",
+    image: Ecommerce,
+  }, 
+  {
+    name: "listado-peliculas",
+    image: Logo
+  }
 ];
 
 /* Contact Info
@@ -110,4 +114,4 @@ export const projectCardImages = [
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/moqzdpnd";
