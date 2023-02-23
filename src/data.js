@@ -10,8 +10,10 @@ import {
 import { SiChakraui, SiJavascript, SiStyledcomponents, SiFirebase } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+//import LogoReact from "./images/logo.svg";
 import Ecommerce from "./images/ecommerce.png"
+import ListadoPeliculas from "./images/listado-peliculas.png"
+import JuegoDados from "./images/juego-dados.png"
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -105,7 +107,11 @@ export const projectCardImages = [
   }, 
   {
     name: "listado-peliculas",
-    image: Logo
+    image: ListadoPeliculas
+  },
+  {
+    name: "juego-dados",
+    image: JuegoDados
   }
 ];
 
