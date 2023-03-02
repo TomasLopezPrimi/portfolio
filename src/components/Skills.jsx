@@ -1,7 +1,7 @@
 import { useAppContext } from "../appContext";
 import { Element } from "react-scroll";
 // Data
-import { skillData, resume } from "../data";
+import { skillData, certificado } from "../data";
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
@@ -29,14 +29,14 @@ export default function Skills() {
               );
             })}
           </Row>
-          {resume && (
-            <a href={resume}>
+          {certificado && (
+            <a href={certificado}>
               <Button
                 size="lg"
                 variant={theme === "light" ? "outline-dark" : "outline-light"}
                 className="mt-5"
               >
-                Curriculum
+                Certificado React Js
               </Button>
             </a>
           )}

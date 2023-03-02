@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Element } from "react-scroll";
 // Data
-import { moreInfo, certificado } from "../data";
+import { moreInfo, curriculum } from "../data";
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
@@ -40,13 +40,13 @@ export default function AboutMe() {
                 {moreInfo && 
                 <>
                   <p>{moreInfo}</p>
-                  <a href={certificado}>
+                  <a href={curriculum}>
                     <Button
                       size="lg"
                       variant={theme === "light" ? "outline-dark" : "outline-light"}
                       className="mt-5"
                        >
-                      Certificado React
+                      Curriculum
                     </Button>
                   </a>
                 </>}
