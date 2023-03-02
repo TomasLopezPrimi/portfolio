@@ -3,10 +3,11 @@ import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Element } from "react-scroll";
 // Data
-import { moreInfo } from "../data";
+import { moreInfo, certificado } from "../data";
 // Components
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
+import { useAppContext } from "../appContext";
 
 const StyledAboutMe = styled.section`
   p {
@@ -19,6 +20,7 @@ const StyledAboutMe = styled.section`
 `;
 
 export default function AboutMe() {
+  const { theme } = useAppContext();
   const { avatar_url, bio } = useSelector(selectData);
 
   return (
@@ -35,7 +37,19 @@ export default function AboutMe() {
             <Col className="d-flex flex-column text-center">
               <Container>
                 <p>{bio}</p>
-                {moreInfo && <p>{moreInfo}</p>}
+                {moreInfo && 
+                <>
+                  <p>{moreInfo}</p>
+                  <a href={certificado}>
+                    <Button
+                      size="lg"
+                      variant={theme === "light" ? "outline-dark" : "outline-light"}
+                      className="mt-5"
+                       >
+                      Certificado React
+                    </Button>
+                  </a>
+                </>}
               </Container>
             </Col>
             <Col className="d-none d-md-block text-center">

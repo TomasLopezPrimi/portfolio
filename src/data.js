@@ -36,7 +36,8 @@ export const Blog = <FaLink />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "Desde el 2021 estudiando y haciendo proyectos de Web.. buscando trabajar como Desarrollador de React";
+  "Desde el 2021 estudiando y haciendo proyectos de Web, recientemente consiguiendo aprobar el curso de 'React Js' de CoderHouse.. buscando trabajar como Desarrollador de React";
+export const certificado = "https://www.coderhouse.com/certificados/63fec936e1d22b000e169ba0"
 
 /* Skills
  ************************************************************** 
@@ -91,7 +92,7 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume = "https://drive.google.com/file/d/1fMhDAjlhn6o3UGB9JupV5YpuhCI5ZfLl/view?usp=sharing";
 
 /* Projects
  ************************************************************** 
